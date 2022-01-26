@@ -822,14 +822,14 @@
             <objects>
                 <viewController id="EN6-lZ-q2V" customClass="CreateConfigsViewController" customModule="MZDevTools" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" misplaced="YES" id="tDM-1k-hgx">
-                        <rect key="frame" x="0.0" y="0.0" width="143" height="55"/>
+                        <rect key="frame" x="0.0" y="0.0" width="143" height="87"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1mg-PM-0vv">
-                                <rect key="frame" x="8" y="8" width="127" height="45"/>
+                                <rect key="frame" x="8" y="8" width="127" height="73"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9Gg-zd-RiW">
-                                        <rect key="frame" x="-2" y="29" width="82" height="16"/>
+                                        <rect key="frame" x="-2" y="57" width="82" height="16"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="Target Name" id="Nky-QB-iLj">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -837,22 +837,31 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5M2-aJ-KMN">
-                                        <rect key="frame" x="0.0" y="0.0" width="96" height="21"/>
+                                        <rect key="frame" x="0.0" y="28" width="96" height="21"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="F02-dF-pE8">
                                             <font key="font" usesAppearanceFont="YES"/>
                                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
-                                        <connections>
-                                            <action selector="tapCreateTarget:" target="EN6-lZ-q2V" id="fYl-zr-Vjx"/>
-                                        </connections>
                                     </textField>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hG5-ji-GrV" userLabel="Create">
+                                        <rect key="frame" x="-7" y="-7" width="75" height="32"/>
+                                        <buttonCell key="cell" type="push" title="Create" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qRh-Qu-FVJ">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="tapCreateTarget:" target="EN6-lZ-q2V" id="8Xm-RA-oVN"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <visibilityPriorities>
                                     <integer value="1000"/>
                                     <integer value="1000"/>
+                                    <integer value="1000"/>
                                 </visibilityPriorities>
                                 <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
                                     <real value="3.4028234663852886e+38"/>
                                     <real value="3.4028234663852886e+38"/>
                                 </customSpacing>
@@ -866,12 +875,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="txtTargetName" destination="9Gg-zd-RiW" id="5vI-DP-OiO"/>
+                        <outlet property="txtTargetName" destination="5M2-aJ-KMN" id="LlX-aC-lbJ"/>
                     </connections>
                 </viewController>
                 <customObject id="eXt-1C-iIj" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="92.5" y="763.5"/>
+            <point key="canvasLocation" x="92.5" y="779.5"/>
         </scene>
     </scenes>
     <resources>

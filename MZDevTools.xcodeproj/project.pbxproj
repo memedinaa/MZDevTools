@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A25C4D327A0040300FFBB09 /* writeToFile.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4A25C4D227A0040000FFBB09 /* writeToFile.sh */; };
+		4A25C4D627A00CCC00FFBB09 /* ConfigModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A25C4D527A00CCC00FFBB09 /* ConfigModel.swift */; };
+		4A25C4D927A00D0600FFBB09 /* ScriptType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A25C4D827A00D0600FFBB09 /* ScriptType.swift */; };
+		4A4C61B1279FE9A0003C392E /* configCreate.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4A4C61B0279FE958003C392E /* configCreate.sh */; };
+		4A4C61B2279FE9A2003C392E /* configInitEnv.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4A4C61AF279FE7CB003C392E /* configInitEnv.sh */; };
+		4A4C61B3279FE9A4003C392E /* configInit.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4A4C61AE279FE299003C392E /* configInit.sh */; };
 		4A71B329279AB7B400A6F887 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A71B328279AB7B400A6F887 /* AppDelegate.swift */; };
 		4A71B32B279AB7B400A6F887 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A71B32A279AB7B400A6F887 /* ViewController.swift */; };
 		4A71B32D279AB7B500A6F887 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A71B32C279AB7B500A6F887 /* Assets.xcassets */; };
@@ -18,6 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A25C4D227A0040000FFBB09 /* writeToFile.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = writeToFile.sh; sourceTree = "<group>"; };
+		4A25C4D527A00CCC00FFBB09 /* ConfigModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigModel.swift; sourceTree = "<group>"; };
+		4A25C4D827A00D0600FFBB09 /* ScriptType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptType.swift; sourceTree = "<group>"; };
+		4A4C61AE279FE299003C392E /* configInit.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = configInit.sh; sourceTree = "<group>"; };
+		4A4C61AF279FE7CB003C392E /* configInitEnv.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = configInitEnv.sh; sourceTree = "<group>"; };
+		4A4C61B0279FE958003C392E /* configCreate.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = configCreate.sh; sourceTree = "<group>"; };
 		4A71B325279AB7B400A6F887 /* MZDevTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MZDevTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A71B328279AB7B400A6F887 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A71B32A279AB7B400A6F887 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +53,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A25C4D427A00CC100FFBB09 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4A25C4D527A00CCC00FFBB09 /* ConfigModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4A25C4D727A00CF500FFBB09 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				4A25C4D827A00D0600FFBB09 /* ScriptType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		4A4C61AD279FE1B7003C392E /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				4A4C61AE279FE299003C392E /* configInit.sh */,
+				4A4C61AF279FE7CB003C392E /* configInitEnv.sh */,
+				4A4C61B0279FE958003C392E /* configCreate.sh */,
+				4A25C4D227A0040000FFBB09 /* writeToFile.sh */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		4A71B31C279AB7B400A6F887 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +99,8 @@
 		4A71B327279AB7B400A6F887 /* MZDevTools */ = {
 			isa = PBXGroup;
 			children = (
+				4A25C4D727A00CF500FFBB09 /* Enums */,
+				4A25C4D427A00CC100FFBB09 /* Model */,
 				4A71B33D279AD73C00A6F887 /* Scripts */,
 				4A71B328279AB7B400A6F887 /* AppDelegate.swift */,
 				4A71B32A279AB7B400A6F887 /* ViewController.swift */,
@@ -76,6 +117,7 @@
 		4A71B33D279AD73C00A6F887 /* Scripts */ = {
 			isa = PBXGroup;
 			children = (
+				4A4C61AD279FE1B7003C392E /* Config */,
 				4A71B33E279AD75E00A6F887 /* removeDerivedData.sh */,
 			);
 			path = Scripts;
@@ -139,9 +181,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A25C4D327A0040300FFBB09 /* writeToFile.sh in Resources */,
+				4A4C61B3279FE9A4003C392E /* configInit.sh in Resources */,
 				4A71B33F279AD76100A6F887 /* removeDerivedData.sh in Resources */,
 				4A71B32D279AB7B500A6F887 /* Assets.xcassets in Resources */,
 				4A71B330279AB7B500A6F887 /* Main.storyboard in Resources */,
+				4A4C61B1279FE9A0003C392E /* configCreate.sh in Resources */,
+				4A4C61B2279FE9A2003C392E /* configInitEnv.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +198,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A25C4D927A00D0600FFBB09 /* ScriptType.swift in Sources */,
 				4A71B338279AB8C500A6F887 /* EventMonitor.swift in Sources */,
+				4A25C4D627A00CCC00FFBB09 /* ConfigModel.swift in Sources */,
 				4A71B32B279AB7B400A6F887 /* ViewController.swift in Sources */,
 				4A71B33C279AD3AE00A6F887 /* Helper.swift in Sources */,
 				4A71B33A279AD27900A6F887 /* CreateConfigsViewController.swift in Sources */,

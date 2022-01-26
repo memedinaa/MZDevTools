@@ -16,5 +16,14 @@ class CreateConfigsViewController: NSViewController {
     }
     
     @IBAction func tapCreateTarget(_ sender: Any) {
+        let model =  ConfigModel(appName: txtTargetName.stringValue,
+                                 environement: "QA",
+                                 suffix: "suffixxxx",
+                                 logEnable: "0",
+                                 bundlePrefix: "com.memedinaaa",
+                                 projectName: "TESTTT")
+        
+        
+         Helper().createConfig(config: model)
     }
 }
