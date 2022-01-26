@@ -63,8 +63,3 @@ printf ${BOSLUK}
 #Script path okumak için //--file directory
 printf "//Script path okumak için //--file directory ${BOSLUK}"
 printf "PROJECT_FOLDER_NAME=${APP_NAME}\n"
-
-#cat log.text
-
-#"appgroupVakko ilk önce app group oluşturulmalı"
-#"app id içinde notificaiton ve appgroup setlenmeli"
