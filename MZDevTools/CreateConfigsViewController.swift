@@ -16,6 +16,7 @@ class CreateConfigsViewController: NSViewController {
     }
     
     @IBAction func tapCreateTarget(_ sender: Any) {
+        //TODO: some variable will get UI
         let model =  ConfigModel(appName: txtTargetName.stringValue,
                                  environement: "QA",
                                  suffix: "suffixxxx",
